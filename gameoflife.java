@@ -1,6 +1,6 @@
 import java.util.*;
 
-class HelloWorld {
+class gameoflife {
     public static void main(String[] args) {
         
 
