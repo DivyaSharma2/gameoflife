@@ -1,27 +1,36 @@
 import java.util.*;
-public class GameOfLife
-{
-	public static void main(String[] args) {
+
+class HelloWorld {
+    public static void main(String[] args) {
         
+
         Scanner s=new Scanner(System.in);
         System.out.println("Enter the value of M :");
         int M=s.nextInt();
         System.out.println("Enter the value of N :");
         int N=s.nextInt();
        // int M = 10, N = 10;
-  
+        System.out.println("Enter the value of Grid :");
+        int grid[][]=new int[100][100];
+        for(int i=0;i<M;i++)
+        {
+            for(int j=0;j<N;j++)
+            {
+                grid[i][j]=s.nextInt();
+            }
+        }
         // Intiliazing the grid.
-        int[][] grid = { { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 1, 1, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 1, 1, 0, 0, 0, 0, 0 },
-            { 0, 0, 1, 1, 0, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
-        };
+        // int[][] grid = { { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+        //     { 0, 0, 0, 1, 1, 0, 0, 0, 0, 0 },
+        //     { 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 },
+        //     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+        //     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+        //     { 0, 0, 0, 1, 1, 0, 0, 0, 0, 0 },
+        //     { 0, 0, 1, 1, 0, 0, 0, 0, 0, 0 },
+        //     { 0, 0, 0, 0, 0, 1, 0, 0, 0, 0 },
+        //     { 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 },
+        //     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+        // };
   
         // Displaying the grid
         System.out.println("Original Generation");
