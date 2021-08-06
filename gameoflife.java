@@ -28,7 +28,7 @@ class gameoflife {
             for (int j = 0; j < N; j++)
             {
                 if (grid[i][j] == 0)
-                    System.out.print(".");
+                    System.out.print("-");
                 else
                     System.out.print("*");
             }
@@ -84,7 +84,7 @@ class gameoflife {
             for (int j = 0; j < N; j++)
             {
                 if (future[i][j] == 0)
-                    System.out.print(".");
+                    System.out.print("-");
                 else
                     System.out.print("*");
             }
