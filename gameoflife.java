@@ -28,9 +28,9 @@ class gameoflife {
             for (int j = 0; j < N; j++)
             {
                 if (grid[i][j] == 0)
-                    System.out.print("-");
+                    System.out.print("-");// - represent Dead Cells
                 else
-                    System.out.print("*");
+                    System.out.print("*");// * represents Alive cells
             }
             System.out.println();
         }
