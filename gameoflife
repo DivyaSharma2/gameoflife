@@ -1,4 +1,5 @@
 # hello-world
+package hello-world.gameoflife;
 public class GameOfLife
 {
     public static void main(String[] args)
