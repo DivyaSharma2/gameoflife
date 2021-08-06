@@ -1,10 +1,14 @@
-# hello-world
-package hello-world.gameoflife;
+import java.util.*;
 public class GameOfLife
 {
-    public static void main(String[] args)
-    {
-        int M = 10, N = 10;
+	public static void main(String[] args) {
+        
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the value of M :");
+        int M=s.nextInt();
+        System.out.println("Enter the value of N :");
+        int N=s.nextInt();
+       // int M = 10, N = 10;
   
         // Intiliazing the grid.
         int[][] grid = { { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
